@@ -1,0 +1,119 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 30px;
+}
+
+h1, h2 {
+  font-family: 'Domine', serif;
+  text-align: center;
+  font-weight: 900;
+}
+
+h1 {
+  margin-bottom: 7px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+header {
+  height: 10vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input[type="text"] {
+  margin: 0 auto;
+  height: 5vh;
+  padding: 2px;
+  display: inline-block;
+  left: 50%;
+  border-color: #03045e;
+  margin-right: 1rem;
+}
+
+input[type="text"]:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-color: #0096c7;
+}
+
+button {
+  margin: 0 auto;
+  height: 5vh;
+  padding: 2px;
+  display: inline-block;
+  left: 50%;
+  width: 2rem;
+  background-color: #ade8f4;
+}
+
+button:hover {
+  -webkit-transform: translateY(2px) scale(1.1);
+          transform: translateY(2px) scale(1.1);
+  background-color: #00b4d8;
+}
+
+.buttonDelete {
+  height: 5vh;
+  padding: 2px;
+  width: 2rem;
+  border-color: #ade8f4;
+}
+
+.buttonDelete:hover {
+  background-color: #00b4d8;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+table, th, td {
+  border: 2px solid #F5FCFF;
+}
+
+td, th {
+  height: 40px;
+}
+
+th {
+  background-color: #023e8a;
+  color: white;
+}
+
+tr {
+  background-color: #48cae4;
+}
+
+tr:hover {
+  background-color: #ade8f4;
+}
+/*# sourceMappingURL=styles.css.map */

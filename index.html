@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Domine&family=Roboto&display=swap" rel="stylesheet">
+    <title>Nile's Research Folder</title>
+</head>
+<body>
+    <header>
+        <h1>Nile's Research Folder</h1>
+        <h2>"Live Long and Prosper"</h2><br>
+    </header>
+    <div class=container>
+        <div id="data">
+            <br>
+            <input type="text" id="topic" placeholder="Add topic" size="50">
+            <input type="text" id="link" placeholder="Add link" size="50">
+            <button id="buttonAdd" onclick="addFunction()">+</button> 
+        </div>
+    </div>
+    <table id="researchTable">
+        <br>
+        <tr>
+            <th>Topic</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>Genetic Engineering of Algae for Enhanced Biofuel Production</td>
+            <td>https://ec.asm.org/content/eukcell/9/4/486.full.pdf</td>
+            <td><input type="button" class="buttonDelete" value="-" onclick="deleteRow(this)"></td>
+        </tr>
+        <tr>
+            <td>CRISPR-Cas Guides the Future of Genetic Engineering</td>
+            <td>https://science.sciencemag.org/content/sci/361/6405/866.full.pdf</td>
+            <td><input type="button" class="buttonDelete" value="-" onclick="deleteRow(this)"></td>
+        </tr>
+        <tr>
+            <td>A Protein-Independent Fluorescent RNA Aptamer Reporter System for Plant Genetic Engineering</td>
+            <td>https://www.nature.com/articles/s41467-020-17497-7</td>
+            <td><input type="button" class="buttonDelete" value="-" onclick="deleteRow(this)"></td>
+        </tr>
+        <tr>
+            <td>Genetic Engineering of T Cells for Immune Tolerance</td>
+            <td>https://www.sciencedirect.com/science/article/pii/S2329050119301524</td>
+            <td><input type="button" class="buttonDelete" value="-" onclick="deleteRow(this)"></td>
+        </tr>
+        <tr>
+            <td>Double Sperm Cloning</td>
+            <td>https://stemcellres.biomedcentral.com/articles/10.1186/s13287-020-01907-0</td>
+            <td><input type="button" class="buttonDelete" value="-" onclick="deleteRow(this)"></td>
+        </tr>
+        <tr>
+            <td>Natural and Bionic Neuronal Membranes</td>
+            <td>https://arxiv.org/pdf/2001.08522.pdf</td>
+            <td><input type="button" class="buttonDelete" value="-" onclick="deleteRow(this)"></td>
+        </tr>
+        <tr>
+            <td>The Origins of Quantum Biology</td>
+            <td>https://royalsocietypublishing.org/doi/pdf/10.1098/rspa.2018.0674</td>
+            <td><input type="button" class="buttonDelete" value="-" onclick="deleteRow(this)"></td>
+        </tr>
+        <tr>
+            <td>Extensive Quantum Biology, Applications of Nonlinear Biology and Nonlinear Mechanism of Memory</td>
+            <td>https://pdfs.semanticscholar.org/5cf3/662b3bf6774b5d991049dd36569574b705b7.pdf</td>
+            <td><input type="button" class="buttonDelete" value="-" onclick="deleteRow(this)"></td>
+        </tr>
+    </table>
+    <script>
+        window.localStorage.getItem('user');
+
+    </script>
+    <script src="script.js">
+        console.log(localStorage)
+    </script>
+</body>
+</html>
